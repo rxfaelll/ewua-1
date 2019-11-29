@@ -57,6 +57,18 @@ body{
     height: 281px;
 }
 
+@media (max-height: 790px) {
+    .container-img img {
+        height: 200px;
+    }
+}
+
+@media (max-height: 710px) {
+    .slider-bem-vindo {
+        top: 4vh;
+    }
+}
+
 .container-btn{
     width: 90%;
     margin: 0 auto;
