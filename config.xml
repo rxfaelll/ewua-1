@@ -36,7 +36,10 @@
 
 
     <!-- teste statusbar branca -->
-    <plugin name="cordova-plugin-statusbar"/>
+    <plugin name="cordova-plugin-statusbar" source="npm" spec="*"/>
+     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#FFFFFF" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+
 
 </widget>
