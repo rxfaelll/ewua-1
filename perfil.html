@@ -100,9 +100,16 @@
     </div>
     <div class="blur-termos"></div>
 
-    <button class="secondary-btn log-out-btn">Log out</button>
+    <button onclick="desconectar()" class="secondary-btn log-out-btn">Log out</button>
 
+    <script src="js/jquery.js"></script>
     <script src="js/perfil.js"></script>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+
+    <script src="/js/firebase/config.js"></script>
+    <script src="/js/firebase/log-out.js"></script>
 </body>
 </html>

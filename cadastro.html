@@ -37,12 +37,19 @@
             <div class="ph-senha">Senha</div>
         </div>
 
-        <button class="primary-btn form-primary-btn" id="salvar-form">Criar Conta <img src="icons/seta.svg" alt=""></button>
+        <button type="button" onclick="criarConta()" class="primary-btn form-primary-btn" id="salvar-form">Criar Conta <img src="icons/seta.svg" alt=""></button>
 
         <a class="secondary-btn form-secondary-btn" href="index-fake.html">Cancelar</a>
 
     </form>
-
+    <script src="js/jquery.js"></script>
     <script src="js/cadastro.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+
+    <script src="/js/firebase/config.js"></script>
+    <script src="/js/firebase/auth.js"></script>
 </body>
 </html>
