@@ -36,7 +36,7 @@
 
 
     <!-- teste statusbar branca -->
-    <plugin name="cordova-plugin-statusbar" spec="~2.4.3"/>
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#FFFFFF" />
     <preference name="StatusBarStyle" value="lightcontent" />
