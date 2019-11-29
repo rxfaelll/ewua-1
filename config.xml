@@ -29,14 +29,9 @@
 
     <icon src="icons/icone-app.png"/>
 
-
     <!-- Libera o vídeo do youtube -->
     <plugin name="cordova-plugin-whitelist" source="npm" spec="*"/>
     <allow-navigation href="https://*youtube.com/*"/>
-
-
-    <!-- teste statusbar branca -->
-    <gap:plugin name="com.phonegap.plugin.statusbar" />
 
 
 </widget>
