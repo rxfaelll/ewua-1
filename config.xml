@@ -31,7 +31,7 @@
 
     <!-- Libera o vídeo do youtube -->
     <plugin name="cordova-plugin-whitelist" source="npm" spec="*"/>
-    <allow-navigation href="https://*youtube.com/*"/>
+    <allow-navigation href="*"/>
 
 
 </widget>
