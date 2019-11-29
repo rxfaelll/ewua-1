@@ -33,4 +33,6 @@
     <plugin name="cordova-plugin-whitelist" source="npm" spec="*"/>
     <allow-navigation href="*" />
 
+    <preference name="Fullscreen" value="true" /> 
+
 </widget>
