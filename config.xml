@@ -37,9 +37,6 @@
 
     <!-- teste statusbar branca -->
     <gap:plugin name="com.phonegap.plugin.statusbar" />
-    <preference name="StatusBarOverlaysWebView" value="true" />
-    <preference name="StatusBarBackgroundColor" value="#FFFFFF" />
-    <preference name="StatusBarStyle" value="lightcontent" />
 
 
 </widget>
