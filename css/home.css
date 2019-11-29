@@ -1,0 +1,145 @@
+.slider-main{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container-text-illustration{
+    width: 90%;
+    height: 162px;
+
+    border-radius: 20px;
+
+    margin: 0 auto 55px auto;
+    padding-left: 25px;
+    padding-top: 15px;
+
+
+    position: relative;
+}
+
+.container-social-media{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 76px;
+    right: 30px;
+}
+
+.blur-bg-primary::before{
+    content: '';
+
+    width: 80%;
+    height: 70px;
+
+    filter: blur(37px);
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+
+    background: var(--principal);
+}
+
+.blur-bg-secondary::before{
+    content: '';
+
+    width: 80%;
+    height: 70px;
+
+    filter: blur(37px);
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+
+    background: var(--secundario);
+}
+
+.container-text-illustration h1::after{
+    content: '';
+
+    width: 31px;
+    height: 3.55px;
+
+    background: white;
+    border-radius: 4px;
+
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.container-text-illustration h1{
+    color: white;
+    font-family: arimaMadurai;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: -0.3px;
+
+    position: relative;
+}
+
+
+
+.container-illustration{
+    position: absolute;
+    right: 34px;
+}
+
+.container-illustration-2{
+    width: 101.23px;
+    height: 139.3px;
+
+    position: absolute;
+    right: 34px;
+    bottom: 11.7px;
+}
+
+.bg-primary{
+    background: var(--principal);
+}
+
+.bg-secondary{
+    background: var(--secundario);
+}
+
+/* Slick style */
+
+.slick-dots{
+    width: 100%;
+
+    position: absolute;
+    top: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+}
+
+.slick-dots button{
+    width: 20px;
+    height: 5px;
+
+    margin: 0 5px;
+
+    background: #C6C6C6;
+    border-radius: 5px;
+    border: none;
+
+    text-indent: -9999px;
+
+    transition: width 0.15s ease-in-out,
+    background 0.15s ease-in-out;
+}
+
+.slick-active > button{
+    width: 30px;
+
+    background: var(--principal);
+}

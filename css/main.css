@@ -1,0 +1,189 @@
+/* Tudo que tá se repetindo nas páginas */
+
+@font-face{
+    font-family: arimaMadurai;
+    src: url('../fonts/ArimaMadurai-Black.ttf');
+}
+
+@font-face{
+    font-family: helveticaLtStd;
+    src: url('../fonts/HelveticaLTStd-Roman.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --principal: #C68630;
+    --secundario: #0F7971;
+    --grey: #C6C6C6;
+    --placeholderColor: #969696;
+    --terciario: #DA0700;
+    --preto: #000;
+    --branco: #fff;
+}
+
+body{
+    background-color: #FAFAFA;
+    padding-bottom: 100px;
+    padding-top: 70px;
+}
+
+button{
+    border: none;
+    background: none;
+    outline: none;
+}
+
+a{
+    color: none;
+    text-decoration: none;
+}
+
+.subtitle-normal{
+    font-family: helveticaLtStd;
+    font-size: 16px;
+    letter-spacing: -0.3px;
+    color: #6a6a6a;
+}
+
+.subtitle-small{
+    font-family: helveticaLtStd;
+    font-size: 14px;
+    letter-spacing: -0.3px;    
+    color: #6a6a6a;
+}
+
+.primary-btn{
+    width: 100%;
+    height: 47px;
+
+    background: var(--principal);
+
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+
+    font-family: arimaMadurai;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    box-sizing: border-box;
+}
+
+.secondary-btn{
+    width: 100%;
+    height: 47px;
+
+    background: #FFF;
+
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+
+    font-family: arimaMadurai;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--principal);
+
+    padding-top: 2px;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    background: var(--branco);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.07);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > div{
+    font-family: arimaMadurai;
+    font-size: 24px;
+    letter-spacing: -0.3px;
+
+    color: #000000;
+    text-transform: uppercase;
+    transform: translateY(2px);
+}
+
+.nav-bar{
+    width: 100%;
+    height: 87px;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: var(--branco);
+    box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.07);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.nav-bar > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.nav-bar > a > div{
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar > a > p{
+    margin-top: 2px;
+
+    text-transform: uppercase;
+    letter-spacing: -0.3px;
+    font-size: 12px;
+}
+
+.ph-email, .ph-nome, .ph-senha, .ph-tel{
+    pointer-events: none;
+}
+
+.no-highlight-text-icon{
+    color: var(--grey);
+}
+
+.highlight-text-icon{
+    color: var(--principal);
+}
+

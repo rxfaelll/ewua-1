@@ -1,0 +1,23 @@
+/* Tamanho dos textos */
+
+.container-text-illustration h1{
+    font-size: 18px;
+}
+
+@media screen and (min-width: 362px){
+    .container-text-illustration h1{
+        font-size: 22px;
+    }
+}
+
+/* Tamanho do container das redes sociais */
+
+.container-social-media{
+    width: 70%;
+}
+
+@media screen and (min-width: 360px){
+    .container-social-media{
+        width: 62%;
+    }
+}

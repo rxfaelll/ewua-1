@@ -1,0 +1,361 @@
+.parceiros-text{
+    width: 80%;
+
+    margin: 38px auto;
+}
+
+#header-help-btn{
+    width: 47px;
+    height: 38px;
+
+    position: absolute;
+    right: 4.83%;
+
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+
+    font-family: arimaMadurai;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+
+    padding-top: 3px;
+}
+
+.container-parceiro{
+    width: 90%;
+    height: 109px;
+
+    background-color: var(--branco);
+    border-radius: 20px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.07);
+
+    margin: 0 auto 20px auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.img-parceiro{
+    width: 136px;
+    height: 93px;
+
+    margin: 8px 20px 8px 8px;
+
+    position: relative;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.img-parceiro img:first-child{
+    width: 100%;
+    height: auto;
+}
+
+.nome-parceiro{
+    font-family: arimaMadurai;
+    font-size: 20px;
+    letter-spacing: -0.3px;
+    text-align: left;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tipo-parceiro{
+    font-family: helveticaLtStd;
+    font-size: 14px;
+    letter-spacing: -0.3px;    
+    color: #6a6a6a;
+    text-align: left;
+}
+
+.selo-parceiro{
+    width: 28px;
+    height: 28px;
+
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+
+/* Cards dos restaurantes */
+
+.container-parceria-help{
+    width: 90%;
+    height: 72vh;
+
+    background: var(--branco);
+    border-radius: 20px;
+
+    margin: 0 auto;
+
+    position: fixed;
+    top: 90px;
+    left: 5%;
+    z-index: 1;
+
+    padding-top: 56px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 36px;
+
+    overflow: scroll;
+    
+    display: none;
+}
+
+.esconde-texto{
+    width: 90%;
+    height: 60px;
+
+    display: block;
+
+    background: #fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    position: fixed;
+    top: 90px;
+    left: 5%;
+}
+
+.container-parceria-help h1{
+    font-family: arimaMadurai;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+
+    margin: 20px 0 7px 0;
+}
+
+.container-parceria-help p{
+    font-family: helveticaLtStd;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: -0.3px;
+}
+
+.container-parceria-help button{
+    position: fixed;
+    right: 37px;
+    top: 100px;
+}
+
+.blur-parceria-help{
+    width: 100%;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(7px);
+
+    display: none;
+}
+
+/* CARD PARCEIRO */
+
+.card-parceiro{
+    width: 90%;
+    height: 72vh;
+
+    background: var(--branco);
+    border-radius: 20px;
+
+    margin: 0 auto;
+
+    position: fixed;
+    top: 90px;
+    left: 5%;
+    z-index: 1;
+
+    padding-bottom: 20px;
+
+    overflow: scroll;
+
+    display: none;
+}
+
+.blur-card{
+    width: 100%;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(7px);
+
+    display: none;
+}
+
+.img-parceiro-card{
+    width: 100%;
+    height: 160px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+}
+
+.img-parceiro-card img{
+    width: 100%;
+    height: auto;
+}
+
+.selo-open-card{
+    width: 71px;
+    height: 71px;
+
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.close-parceiro-btn{
+    width: 50px;
+    height: 50px;
+
+    position: fixed;
+    right: 37px;
+    top: 100px;
+}
+
+.close-stick{
+    width: 35px;
+    height: 5px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    position: absolute;
+    top: 16px;
+    right: 0px;
+
+    transition: background 0.3s ease-in-out;
+}
+
+.stick-1{
+    transform: rotate(45deg);
+}
+
+.stick-2{
+    transform: rotate(-45deg);
+}
+
+.black-stick{
+    background: #6A6A6A;
+}
+
+.container-nome-card{
+    width: 84%;
+
+    margin: 188px auto 0 auto;
+}
+
+.nome-restaurante-card{
+    font-family: arimaMadurai;
+    font-size: 24px;
+
+    color: #000000;
+}
+
+.container-local{
+    width: 90%;
+    height: 48px;
+    margin: 36px auto 0 auto;
+
+    padding-left: 70px;
+    padding-top: 6px;
+
+    position: relative;
+}
+
+.container-local div{
+    width: 48px;
+    height: 48px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cep-card{
+    font-family: helveticaLtStd;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #737373;
+}
+
+.rua-card{
+    font-family: helveticaLtStd;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #737373;
+}
+
+.descricao-restaurante-card{
+    font-family: helveticaLtStd;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #6A6A6A;
+}
+
+.placeholder-mapa{
+    width: 90%;
+    height: 164px;
+
+    margin: 21px auto 40px auto;
+
+    background: #969696;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.container-desconto{
+    width: 90%;
+    height: 62px;
+
+    background: #0F7971;    
+
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+
+    font-family: arimaMadurai;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+.show-container{
+    display: block;
+}

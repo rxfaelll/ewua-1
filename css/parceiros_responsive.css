@@ -1,0 +1,22 @@
+
+.nome-parceiro{
+    width: 110px;
+}
+
+@media screen and (min-width: 350px){
+    .nome-parceiro{
+        width: 140px;
+    }
+}
+
+@media screen and (min-width: 375px){
+    .nome-parceiro{
+        width: 160px;
+    }
+}
+
+@media screen and (min-width: 405px){
+    .nome-parceiro{
+        width: 210px;
+    }
+}

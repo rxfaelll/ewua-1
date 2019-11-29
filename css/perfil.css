@@ -1,0 +1,306 @@
+.container-foto-user{
+    width: 100%;
+
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.foto-user{
+    width: 136px;
+    height: 136px;
+
+    overflow: hidden;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--placeholderColor);
+}
+
+.foto-user img{
+    width: 100%;
+    height: auto;
+}
+
+.container-foto-user button{
+    width: 75px;
+    height: 34px;
+
+    position: absolute;
+    top: 110px;
+
+    background: #C68630;
+    border-radius: 20px;
+
+    font-family: arimaMadurai;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+}
+
+.container-foto-user input{
+    width: 75px;
+    height: 34px;
+    position: absolute;
+    top: 110px;
+    opacity: 0;
+}
+
+form{
+    width: 90%;
+
+    margin: 28px auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input{
+    width: 100%;
+    height: 47px;
+
+    margin: 14px 0;
+
+    border: 1px solid var(--placeholderColor);
+    border-radius: 20px;
+    background: none;
+
+    padding: 14px 20px;
+
+    font-family: helveticaLtStd;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+
+    color: #969696;
+
+    outline: none;
+
+    transition: border 0.15s ease-in-out,
+    color 0.15s ease-in-out;
+}
+
+.form-input:focus{
+    border: 1px solid var(--principal);
+    color: var(--principal);
+}
+
+.ph-nome, .ph-email, .ph-tel, .ph-senha{
+    width: 0px;
+    background: #fafafa;
+
+    font-family: helveticaLtStd;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.3px;
+    color: var(--placeholderColor);
+
+    position: absolute;
+    top: 29px;
+    left: 20px;
+
+    transition: width 0.5s ease-in-out,
+    padding-left 0.3s ease-in-out,
+    top 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.container-termos{
+    width: 90%;
+
+    margin: 23px auto 37px auto;
+}
+
+.container-termos button{
+    font-family: helveticaLtStd;
+    font-size: 16px;
+    letter-spacing: -0.3px;
+    text-decoration-line: underline;
+    color: #C68630;
+}
+
+.close-stick{
+    width: 35px;
+    height: 5px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    position: absolute;
+    top: 16px;
+    right: 0px;
+
+    transition: background 0.3s ease-in-out;
+}
+
+.stick-1{
+    transform: rotate(45deg);
+}
+
+.stick-2{
+    transform: rotate(-45deg);
+}
+
+.black-stick{
+    background: #6A6A6A;
+}
+
+.log-out-btn{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    color: var(--terciario)
+}
+
+.container-termos-aberto{
+    width: 90%;
+    height: 72vh;
+
+    background: var(--branco);
+    border-radius: 20px;
+
+    margin: 0 auto;
+
+    position: fixed;
+    top: 90px;
+    left: 5%;
+    z-index: 1;
+
+    padding-top: 56px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 56px;
+
+    overflow: scroll;
+    
+    display: none;
+}
+
+.esconde-texto{
+    width: 90%;
+    height: 60px;
+
+    display: block;
+
+    background: #fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    position: fixed;
+    top: 90px;
+    left: 5%;
+}
+
+.blur-termos{
+    width: 100%;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(7px);
+
+    display: none;
+}
+
+.show-container{
+    display: block;
+}
+
+#close-termos{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 37px;
+    top: 100px;
+}
+
+.container-termos-aberto h1{
+    font-family: arimaMadurai;
+    font-size: 24px;
+    line-height: 25px;
+
+    margin-bottom: 7px;
+    margin-top: 26px;
+
+    letter-spacing: -0.3px;
+
+    color: #000000;
+
+}
+
+.container-termos-aberto p{
+    font-family: helveticaLtStd;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+
+    color: #000000;
+}
+
+/* Gambiarra pra fazer as labels subirem */
+
+.container-input{
+    position: relative;
+}
+
+.input-nome:focus ~ .ph-nome{
+    width: 57px;
+
+    top: 7px;
+    color: var(--principal);
+    padding-left: 10px;
+}
+
+.input-email:focus ~ .ph-email{
+    width: 57px;
+
+    top: 7px;
+    color: var(--principal);
+    padding-left: 10px;
+}
+
+.input-tel:focus ~ .ph-tel{
+    width: 70px;
+
+    top: 7px;
+    color: var(--principal);
+    padding-left: 10px;
+}
+
+.input-senha:focus ~ .ph-senha{
+    width: 60px;
+
+    top: 7px;
+    color: var(--principal);
+    padding-left: 10px;
+}
+
+.up-placeholder{
+    width: 60px;
+    top: 7px;
+    padding-left: 10px;
+}
+
+.up-placeholder-tel{
+    width: 40px;
+    top: 7px;
+    padding-left: 10px;
+}
+
+.up-placeholder-senha{
+    width: 60px;
+    top: 7px;
+    padding-left: 10px;
+}

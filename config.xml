@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="org.inter2019.ewua"
+        version="1.0.0">
+
+    <name>
+        ewûa
+    </name>
+
+    <description>
+        Ewûa é um projeto sobre alguma coisa, certamente.
+    </description>
+
+    <author email="inter.consciencia2019@gmail.com">
+        Rafael Soares
+        Cláudio Gomes
+        Larissa Lippel
+        Guilherme Buzzo
+        Pablo Chiapeta
+        Mainny Fernandes
+        Lucas Eliseo
+    </author>
+
+    <preference name="fullscreen" value="true" />
+    <preference name="orientation" value="portrait"/>
+    <preference name="permissions" value="none"/>
+    <platform name="android"/>
+
+    <icon src="icons/icone-app.png"/>
+    <!-- <plugin name="cordova-plugin-splashscreen"/>
+    <splash src="img/splash.jpg"/> -->
+
+
+    <!-- Libera o vídeo do youtube -->
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="*"/>
+    <allow-navigation href="https://*youtube.com/*"/>
+</widget>

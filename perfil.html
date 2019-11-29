@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <title>ewûa</title>
+</head>
+<body>
+    <header><div>Perfil</div></header>
+
+    <nav class="nav-bar">
+        <a href="home.html">
+            <div>
+                <img src="icons/home-icon-off.svg" alt="">
+            </div>
+            <p class="no-highlight-text-icon subtitle-small">Início</p>
+        </a>
+        <a href="assistir.html">
+            <div>
+                <img src="icons/assistir-icon-off.svg" alt="">
+            </div>            
+            <p class="no-highlight-text-icon subtitle-small">Assistir</p>
+        </a>
+        <a href="parceiros.html">
+            <div>
+                <img src="icons/parceiros-icon-off.svg" alt="">
+            </div>            
+            <p class="no-highlight-text-icon subtitle-small">Parceiros</p>
+        </a>
+        <a href="perfil.html">
+            <div>
+                <img src="icons/perfil-icon-on.svg" alt="">
+            </div>            
+            <p class="highlight-text-icon subtitle-small">Perfil</p>
+        </a>
+    </nav>
+
+    <div class="container-foto-user">
+        <div class="foto-user">
+            <img src="" id="image" alt="">
+        </div>
+        <button>Trocar</button>
+        <input type="file" name="upload-img" id="upload-img" onchange="loadFile(event)">
+    </div>
+
+    <form action="" id="js-form">
+        <div class="container-input">
+            <input type="text" name="nome-perfil" id="nome-form" class="form-input input-nome" autocomplete="false">
+            <div class="ph-nome">Nome</div>
+        </div>
+
+        <div class="container-input">
+            <input type="email" name="email-perfil" id="email-form" class="form-input input-email" autocomplete="false">
+            <div class="ph-email">Email</div>
+        </div>
+
+        <div class="container-input">
+            <input type="text" name="tel-perfil" id="tel-form" class="form-input input-tel" autocomplete="false">
+            <div class="ph-tel">Telefone</div>
+        </div>
+
+        <div class="container-input">
+            <input type="password" name="senha-perfil" id="senha-form" class="form-input input-senha" autocomplete="false">
+            <div class="ph-senha">Senha</div>
+        </div>
+
+        <button class="primary-btn" id="salvar-form">Salvar alterações</button>
+
+        <button class="secondary-btn" id="cancelar-form">Cancelar</button>
+
+    </form>
+
+    <div class="container-termos">
+        <button>Termos de serviço e privacidade</button>
+    </div>
+
+    <div class="container-termos-aberto">
+        <span class="esconde-texto"></span>
+        <div id="close-termos">
+            <div class="close-stick stick-1 black-stick"></div>
+            <div class="close-stick stick-2 black-stick"></div>
+        </div>
+        <h1>Termos de serviço e privacidade</h1>
+        <p>Coletamos o conteúdo e outras informações fornecidas por você durante sua utilização de nossos Serviços, incluindo informações sobre si mesmo ou sobre outros, como as informações que você fornece ao criar uma conta, e o conteúdo que você cria ou fornece por meio do Aplicativo, incluindo fotos, vídeos ou máscaras. Quando fazemos isso, também podemos coletar informações que fazem parte das coisas que você compartilha, por exemplo, o local de uma foto ou a data de criação de um arquivo.<br><br> 
+        
+        
+        CLÁUSULA DE RESERVA (Lei 9.610/98 - LEI DE DIREITOS AUTORAIS): Este aplicativo foi
+        publicado e é mantido pelos discentes do 4o semestre, do Curso de Graduação em Design
+        Digital, da Universidade Anhembi Morumbi, visando a atender às exigências da disciplina
+        PROJETO INTERDISCIPLINAR: AUDIOVISUAL. Trata-se de uma publicação temporária para
+        propósitos estritamente acadêmicos e sem fins lucrativos. Em atendimento às exigências
+        da Lei 9.610/98, do parágrafo 4°, do Artigo 184, do Código Penal, os discentes responsáveis
+        por esta publicação colocam-se à disposição, por intermédio do e-mail (inter.consciencia19@gmail.com),
+        para dirimir quaisquer dúvidas referentes à eventual violação de direitos autorais,
+        comprometendo-se desde já, a retirar do ar, qualquer texto, som ou imagem pertencente a
+        autor ou titular que se sinta direta ou indiretamente prejudicado.</p>
+    </div>
+    <div class="blur-termos"></div>
+
+    <button class="secondary-btn log-out-btn">Log out</button>
+
+    <script src="js/perfil.js"></script>
+
+</body>
+</html>
