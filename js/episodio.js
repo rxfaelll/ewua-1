@@ -24,7 +24,7 @@ function numeroEpisodio() {
     $('.ep-show').html(`${slideEpisodio}º Episódio`);
 
     if (slideEpisodio != 1) {
-        $(".slick-next").css("margin-top", "-110px");
+        $(".slick-next").css("margin-top", "-113px");
     } else {
         $(".slick-next").css("margin-top", "-23px")
     }

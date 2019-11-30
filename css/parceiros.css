@@ -274,7 +274,7 @@
 .container-nome-card{
     width: 84%;
 
-    margin: 188px auto 0 auto;
+    margin: 170px auto 0 auto;
 }
 
 .nome-restaurante-card{
@@ -282,6 +282,7 @@
     font-size: 24px;
 
     color: #000000;
+    margin-bottom: 7px;
 }
 
 .container-local{
