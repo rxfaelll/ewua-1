@@ -37,17 +37,17 @@ inputTel.addEventListener("input", () => {
         }
 })
 
-// input Senha
-let inputSenha = document.querySelector(".input-senha");
-let phSenha = document.querySelector(".ph-senha");
+// // input Senha
+// let inputSenha = document.querySelector(".input-senha");
+// let phSenha = document.querySelector(".ph-senha");
 
-inputSenha.addEventListener("input", () => {
-        if(inputSenha.value.length > 0){
-            phSenha.classList.add("up-placeholder-senha");
-        }else{
-            phSenha.classList.remove("up-placeholder-senha");
-        }
-})
+// inputSenha.addEventListener("input", () => {
+//         if(inputSenha.value.length > 0){
+//             phSenha.classList.add("up-placeholder-senha");
+//         }else{
+//             phSenha.classList.remove("up-placeholder-senha");
+//         }
+// })
 
 
 

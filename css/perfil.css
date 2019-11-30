@@ -117,7 +117,9 @@ form{
 .container-termos{
     width: 90%;
 
-    margin: 23px auto 37px auto;
+    margin: 37px auto 37px auto;
+    text-align: center;
+    transform: translateX(-1px);
 }
 
 .container-termos button{
@@ -159,7 +161,8 @@ form{
     width: 90%;
     display: block;
     margin: 0 auto;
-    color: var(--terciario)
+    color: var(--terciario);
+    margin-bottom: 20px;
 }
 
 .container-termos-aberto{
@@ -300,4 +303,8 @@ form{
     width: 55px;
     top: 7px;
     padding-left: 10px;
+}
+
+#salvar-form {
+    margin-top: 13px;
 }

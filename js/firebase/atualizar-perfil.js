@@ -32,21 +32,47 @@ firebase.auth().onAuthStateChanged(function(user) {
     }
 });
 
-const atualizarBanco = () => {
+function atualizarBanco() {
+    let user = firebase.auth().currentUser;
 
+    let avisado = 0;
+
+    let emailVal = $('#email-form').val();
+    let senhaVal = $('#senha-form').val();
+    let nomeVal = $('#nome-form').val();
+    let telVal = $('#tel-form').val();
+
+    console.log(user.uid);
+
+    user.updateEmail(emailVal).then(function() {
+        
+    }).catch(function(error) {
+        alert('Houve um erro ao atualizar o endereço de email.');
+    });
+
+    // if (senhaVal != null && senhaVal != "") {
+    //     user.updatePassword(senhaVal).then(function() {
+    //         alert('Senha e outras informações foram atualizadas com sucesso! ✅');
+    //         avisado = 1;
+    //       }).catch(function(error) {
+    //         alert('Ocorreu um erro ao atualizar sua senha. :('+error);
+    //       });
+    // }
+
+    let db = firebase.firestore();
+    let usuarios = db.collection('usuarios');
+    let usuarioAtual = usuarios.doc(user.uid);
+    usuarioAtual.set({
+        id: user.uid,
+        nome: nomeVal,
+        tel: telVal
+    }).then(function () {
+        if (avisado == 0) {
+            alert('Informações de perfil atualizadas com sucesso! ✅');
+        }
+    });
 }
 
 function enviarFoto() {
-    // Create a root reference
-    var storageRef = firebase.storage().ref('/profile/');
-
-    // Create a reference to 'mountains.jpg'
-    var mountainsRef = storageRef.child('mountains.jpg');
-
-    // Create a reference to 'images/mountains.jpg'
-    var mountainImagesRef = storageRef.child('images/mountains.jpg');
-
-    // While the file names are the same, the references point to different files
-    mountainsRef.name === mountainImagesRef.name            // true
-    mountainsRef.fullPath === mountainImagesRef.fullPath    // false
+    // não conseguimos arrumar essa funcionalidade a tempo para a apresentação do projeto
 }
