@@ -194,6 +194,7 @@ header a div{
     text-transform: uppercase;
 
     color: #FFFFFF;
+    transition: 0.15s ease-in-out;
 }
 
 .slick-next img{

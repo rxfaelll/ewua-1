@@ -1,3 +1,13 @@
+:root{
+    --principal: #C68630;
+    --secundario: #0F7971;
+    --grey: #C6C6C6;
+    --placeholderColor: #969696;
+    --terciario: #DA0700;
+    --preto: #000;
+    --branco: #fff;
+}
+
 .parceiros-text{
     width: 80%;
 
@@ -358,4 +368,8 @@
 
 .show-container{
     display: block;
+}
+
+.em-analise {
+    background-color: var(--placeholderColor);
 }
