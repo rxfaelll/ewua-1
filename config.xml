@@ -33,6 +33,9 @@
     <plugin name="cordova-plugin-whitelist" source="npm" spec="*"/>
     <allow-navigation href="*" />
 
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.7.0" />
+    <plugin name="cordova-plugin-statusbar" />
+
     <preference name="Fullscreen" value="true" /> 
 
 </widget>
