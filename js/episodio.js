@@ -24,9 +24,11 @@ function numeroEpisodio() {
     $('.ep-show').html(`${slideEpisodio}º Episódio`);
 
     if (slideEpisodio != 1) {
-        $(".slick-next").css("margin-top", "-113px");
+        $(".slick-next").css("bottom", "auto");
+        $(".slick-next").css("top", "500px");
     } else {
-        $(".slick-next").css("margin-top", "-23px")
+        $(".slick-next").css("bottom", "-20px");
+        $(".slick-next").css("top", "auto");
     }
 }
 

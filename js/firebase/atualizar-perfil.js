@@ -28,7 +28,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         atualizarValores(user);
     } else {
-        alert('Erro ao buscar informações do usuário. Verifique sua conexão.'); 
+         
     }
 });
 

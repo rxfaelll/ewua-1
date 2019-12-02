@@ -99,6 +99,23 @@ form{
     bottom: 25px;
 }
 
+
+@media (max-height: 400px) {
+    .form-primary-btn{
+        margin-top: 85px;
+        position: relative;
+        width: 100%;
+    } 
+    .form-secondary-btn{
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -42px;
+    }
+}
+
 /* Gambiarra pra fazer as labels subirem */
 
 .container-input{

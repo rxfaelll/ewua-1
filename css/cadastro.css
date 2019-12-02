@@ -98,6 +98,22 @@ form{
     bottom: 25px;
 }
 
+@media (max-height: 555px) {
+    .form-primary-btn{
+        margin-top: 85px;
+        position: relative;
+        width: 100%;
+    } 
+    .form-secondary-btn{
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -42px;
+    }
+}
+
 /* Gambiarra pra fazer as labels subirem */
 
 .container-input{
@@ -137,13 +153,19 @@ form{
 }
 
 .up-placeholder{
-    width: 60px;
+    width: 55px;
+    top: 7px;
+    padding-left: 10px;
+}
+
+.up-placeholder-email{
+    width: 52px;
     top: 7px;
     padding-left: 10px;
 }
 
 .up-placeholder-tel{
-    width: 40px;
+    width: 70px;
     top: 7px;
     padding-left: 10px;
 }

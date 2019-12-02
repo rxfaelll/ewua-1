@@ -16,9 +16,9 @@ let phEmail = document.querySelector(".ph-email");
 
 inputEmail.addEventListener("input", () => {
         if(inputEmail.value.length > 0){
-            phEmail.classList.add("up-placeholder");
+            phEmail.classList.add("up-placeholder-email");
         }else{
-            phEmail.classList.remove("up-placeholder");
+            phEmail.classList.remove("up-placeholder-email");
         }
 })
 

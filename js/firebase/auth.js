@@ -5,15 +5,9 @@ function fazerLogin() {
 
     firebase.auth().signInWithEmailAndPassword(email, senha).catch(function() {
         alert(`Falha no login. Verifique as informações.`);
-    });
-
-    firebase.auth().onAuthStateChanged(function(user) {
+    }).then(function(user) {
         if (user) {
-            if (user) {
-                window.location.href = "home.html";
-            } else {
-                alert("Ocorreu um erro ao salvar suas informações. Verifique sua conexão e as informações fornecidas e tente novamente."); 
-            }
+            window.location.href = "home.html";
         } else {
             
         }
@@ -28,24 +22,21 @@ function criarConta() {
 
     firebase.auth().createUserWithEmailAndPassword(email, senha).catch(function() {
         alert(`Falha ao criar a conta. Verifique as informações e tente novamente.`);
-    });
+    }).then(function () {
+        let user = firebase.auth().currentUser;
 
-    firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
             var db = firebase.firestore();
             db.collection("usuarios").doc(user.uid).set({
                 id: user.uid,
                 nome: nome,
                 tel: tel
-            }).then(function () {
-                if (user) {
-                    window.location.href = "home.html";
-                } else {
-                    alert("Ocorreu um erro ao salvar suas informações. Verifique sua conexão e as informações fornecidas e tente novamente."); 
-                }
+            }).then(function() {
+                window.location.href = "home.html";
             });
         } else {
-            
+
         }
     });
+
 }
